@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #ddd;
+  height: 100vh;
+  position: relative;
+}
+
+.wave1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#projects {
+  background-color: #ddd;
+}
+
+footer {
+  background-color: #343a40;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 4rem;
+}
+
+@media (max-width: 576px) {
+  .btn-github {
+    width: 80%;
+  }
+
+  .navbar {
+    background-color: black !important;
+  }
+}
