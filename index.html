@@ -63,17 +63,17 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container" data-aos="zoom-in">
+      <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi ducimus quasi asperiores nemo facere explicabo suscipit officiis atque dolorum!</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quia accusantium voluptatem quaerat maxime itaque animi consectetur debitis eveniet necessitatibus?</p>
           </div>
         </div>
@@ -97,7 +97,7 @@
             <h2>My Projects</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-right">
           <div class="col-md-4 mb-3">
             <div class="card project-tile text-center">
               <img src="img/surveyform.jpg" class="card-img-top" alt="deskimg1" />
@@ -227,7 +227,9 @@
     <!-- Script AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true,
+      });
     </script>
 
     <!-- script untuk deploy contact form -->
